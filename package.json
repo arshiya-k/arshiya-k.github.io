@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "gsap": "^3.11.5",
+    "gsap-trial": "^3.11.5",
+    "next": "13.2.4",
+    "next-transpile-modules": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-parallax": "^3.5.1",
+    "react-responsive": "^9.0.2",
+    "react-typewriter-effect": "^1.1.0",
+    "typewriter-effect": "^2.19.0"
+  }
+}
