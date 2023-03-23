@@ -2,6 +2,7 @@ import { Parallax } from "react-parallax";
 import flowerOne from "@/components/images/flower.png";
 import React, { useState, useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect";
+import green from "@/components/images/green.png"
 import { useMediaQuery } from 'react-responsive'
 
 
@@ -56,18 +57,20 @@ function TypingEffect() {
 }
 
 const ImageOne = () => {
-  let strength;
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  let strength, bgPath;
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
   if (isTabletOrMobile) {
     strength=200;
+    bgPath = green.src;
   } else {
     strength=800;
+    bgPath = flowerOne.src;
   }
 
   return (
     <Parallax
       className="image"
-      bgImage={flowerOne.src}
+      bgImage={bgPath}
       strength={strength}
       bgImageStyle={{ minHeight: "100vh" }}
     >

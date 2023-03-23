@@ -83,8 +83,8 @@ h1 {
 }
 .about-me {
   position: absolute;
-  top:2%;
-  left: 50%;
+  /* top:2%;*/
+  left: 50%; 
 }
 
 .about-me h1 {
@@ -111,7 +111,7 @@ h1 {
   }
   
   .about-me h1 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   
   .about-me-text {
@@ -120,15 +120,21 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
-  .content {
+  .contact .about {
     width: 100%;
   }
+  .about-me {
+    position: static;
+    transform: none;
+    margin-top: 0;
+  }
+  
   .about-me h1 {
     font-size: 1em;
   }
   
   .about-me-text {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 }
 
@@ -397,7 +403,12 @@ h1 {
   color: #37667E;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width:768px){
+  .about .react-parallax-bgimage {
+
+  }
+} */
+/* @media only screen and (max-width: 768px) {
   .contact {
     font-size: 10px;
     margin: 0 7px;
@@ -405,7 +416,7 @@ h1 {
   .contact-links {
     padding-top: 10px;
   }
-}
+} */
 
 /* @media only screen and (max-width: 480px) {
   .contact {
