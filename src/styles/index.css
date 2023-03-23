@@ -338,38 +338,6 @@ h1 {
 }
 
 */
-.card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  transition: all 0.2s ease-in-out;
-  width: 100%; /* Change the width to 100% */
-  height: auto; /* Change the height to auto */
-  overflow: hidden;
-}
-
-.card:hover {
-  height: auto; /* Change the height to auto */
-  width: 100%; /* Change the width to 100% */
-}
-
-.cards-container {
-  display: flex;
-  justify-content: center;
-  padding-top: 10%;
-  height: auto; /* Change the height to auto */
-  flex-wrap: wrap; /* Add flex-wrap property */
-}
-
-@media only screen and (min-width: 768px) { /* For iPad layout */
-  .card {
-    width: 250px;
-    height: 300px;
-  }
-
-  .cards-container {
-    height: 100vh;
-  }
-}
 
 .three {
   display: flex;
@@ -461,6 +429,76 @@ h1 {
   color: #9E9D89;
   font-size: 2em;
 }
+.scroll-section-outer{
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 500vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+  margin-top: auto;
+}
+
+.scroll-section .project-content {
+  margin-left: 7em;
+  margin-right: 7em;
+}
+.scroll-section h2 {
+  text-align: center;
+}
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+
+
+@media only screen and (max-width:768px){
+  .scroll-intro {
+    font-size: 4rem;
+  }
+
+  .scroll-section .project-content {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .proj-image img {
+    width: 260px;
+    height: 152px;
+  }
+
+  /* .project-content p {
+    margin: 1em;
+  } */
+} 
+/* @media only screen and (max-width: 768px) {
+  .contact {
+    font-size: 10px;
+    margin: 0 7px;
+  }
+  .contact-links {
+    padding-top: 10px;
+  }
+} */
 
 .arrow {
   position: relative;
@@ -668,42 +706,6 @@ h1 {
   }
   
 
-  .scroll-section-outer{
-    overflow: hidden;
-  }
-
-  .scroll-section-inner {
-    height: 100vh;
-    width: 500vw;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-  
-  .scroll-section {
-    height: 100vh;
-    width:100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3em;
-    margin-top: auto;
-  }
-  
-  .scroll-section .project-content {
-    margin-left: 7em;
-    margin-right: 7em;
-  }
-  .scroll-section h2 {
-    text-align: center;
-  }
-  .scroll-section h3 {
-    color: var(--primaryTextColor);
-    letter-spacing: var(--headlineMedium);
-    font-size: var(--headlineMedium);
-    text-transform: uppercase;
-  }
 
   /* @media only screen and (max-width: 768px) {
     .image {
