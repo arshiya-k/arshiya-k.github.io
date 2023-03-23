@@ -164,6 +164,85 @@ h1 {
   /* background-color: #BAABDA; */
   color: #f6e2ff;
 }
+
+.menu-toggle {
+  display: none;
+  padding: 10px;
+  margin: 2px;
+  background-color: grey;
+
+}
+
+@media screen and (min-width: 769px) {
+  .resume-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    background: #333;
+    margin-bottom: 5px;
+    position: relative;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  }
+
+  .menu-toggle span:first-child {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:last-child {
+    transform-origin: 0 100%;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #7B92AA;
+    font-size: 1rem;
+    transition-duration: 0.4s;
+  }
+
+  .menu li a:hover {
+    color: #f6e2ff;
+  }
+}
   /*
   .card {
     border: 1px solid #ccc;

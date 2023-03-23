@@ -30,10 +30,22 @@ const Navigation = () => {
 
 */
 const Navigation = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+
   return (
     <div className="navbar">
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+      <div className="menu-toggle" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul className={`menu menu-horizontal px-1 ${showMenu ? 'show' : ''}`}>
           <li>
             <Link href="#cover">Home</Link>
           </li>
@@ -42,6 +54,9 @@ const Navigation = () => {
           </li>
           <li>
             <Link href="#projects">Projects</Link>
+          </li>
+          <li className="resume-link">
+          <Link href="Arshiya_Khattak__Resume_.pdf" target="_blank">Resume</Link>
           </li>
         </ul>
         <ul className="menu menu-horizontal px-1">
