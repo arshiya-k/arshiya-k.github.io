@@ -56,13 +56,19 @@ function TypingEffect() {
 }
 
 const ImageOne = () => {
+  let strength;
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  if (isTabletOrMobile) {
+    strength=200;
+  } else {
+    strength=800;
+  }
 
   return (
     <Parallax
       className="image"
       bgImage={flowerOne.src}
-      strength={800}
+      strength={strength}
       bgImageStyle={{ minHeight: "100vh" }}
     >
       <div className="content-one">

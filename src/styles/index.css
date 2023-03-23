@@ -101,14 +101,17 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  .contact .about {
+    width: 100%;
+  }
   .about-me {
     position: static;
     transform: none;
-    margin-top: 40px;
+    margin-top: 0;
   }
   
   .about-me h1 {
-    font-size: 2em;
+    font-size: 1em;
   }
   
   .about-me-text {
@@ -117,12 +120,15 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+  .content {
+    width: 100%;
+  }
   .about-me h1 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   
   .about-me-text {
-    font-size: 1em;
+    font-size: 0.5em;
   }
 }
 
@@ -390,6 +396,26 @@ h1 {
   
   color: #37667E;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    font-size: 10px;
+    margin: 0 7px;
+  }
+  .contact-links {
+    padding-top: 10px;
+  }
+}
+
+/* @media only screen and (max-width: 480px) {
+  .contact {
+    font-size: 7px;
+    margin: 0 5px;
+  }
+  .contact-links {
+    padding-top: 7px;
+  } 
+}*/
 #projects {
   background-color: #FFF9F9;
 }
@@ -667,3 +693,10 @@ h1 {
     font-size: var(--headlineMedium);
     text-transform: uppercase;
   }
+
+  /* @media only screen and (max-width: 768px) {
+    .image {
+      background-attachment: scroll !important;
+    }
+  }
+   */

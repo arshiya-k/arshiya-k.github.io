@@ -1,7 +1,8 @@
 import {Parallax} from 'react-parallax';
-import flowerTwo from '@/components/images/bg.png';
+import flowerTwo from '@/components/images/about-me.png';
 import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
+import { useMediaQuery } from 'react-responsive';
 
 const ContactLinks = () => {
     return (
@@ -34,8 +35,15 @@ const ContactLinks = () => {
 }
 // console.log(flowerOne)
 const ImageTwo = () => {
+  let strength;
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  if (isTabletOrMobile) {
+    strength=100;
+  } else {
+    strength=800;
+  }
     return (
-    <Parallax className='image' bgImage={flowerTwo.src} strength={800} bgImageStyle={{minHeight:"100vh"}}>
+    <Parallax className='image' bgImage={flowerTwo.src} strength={strength} bgImageStyle={{minHeight:"100vh"}}>
       <div className='content about'>
         <div className='about-me'>
             <h1>About Me</h1>
