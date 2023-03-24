@@ -11,10 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Arshiya Khattak | Software Engineer</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-      </Head>
       <Navigation />
       <section id="cover">
         <ImageOne />
