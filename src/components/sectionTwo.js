@@ -38,12 +38,12 @@ const ContactLinks = () => {
 const ImageTwo = () => {
   let strength, bgPath;
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
-  if (isTabletOrMobile) {
-    strength=100;
-    bgPath = blue.src;
-  } else {
+  if (!isTabletOrMobile) {
     strength=800;
     bgPath = me.src;
+  } else {
+    strength=200;
+    bgPath = blue.src;
   }
     return (
     <Parallax className='image' bgImage={bgPath} strength={strength} bgImageStyle={{minHeight:"100vh"}}>

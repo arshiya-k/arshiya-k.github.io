@@ -58,12 +58,12 @@ function TypingEffect() {
 const ImageOne = () => {
   let strength, bgPath;
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
-  if (isTabletOrMobile) {
-    strength=200;
-    bgPath = green.src;
-  } else {
+  if (!isTabletOrMobile) {
     strength=800;
     bgPath = flowerOne.src;
+  } else {
+    strength=200;
+    bgPath = green.src;
   }
 
   return (
