@@ -37,7 +37,7 @@ const ContactLinks = () => {
 
 const ImageTwo = () => {
   let strength, bgPath;
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+  const isTabletOrMobile = useMediaQuery({ query: '(min-device-width: 768px)' });
   if (!isTabletOrMobile) {
     strength=800;
     bgPath = me.src;
