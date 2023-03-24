@@ -62,7 +62,7 @@ const ImageOne = () => {
     strength=800;
     bgPath = flowerOne.src;
   } else {
-    strength=200;
+    strength=400;
     bgPath = green.src;
   }
 

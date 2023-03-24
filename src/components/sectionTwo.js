@@ -42,7 +42,7 @@ const ImageTwo = () => {
     strength=800;
     bgPath = me.src;
   } else {
-    strength=200;
+    strength=400;
     bgPath = blue.src;
   }
     return (
