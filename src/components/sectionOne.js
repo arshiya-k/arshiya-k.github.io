@@ -6,7 +6,6 @@ import green from "@/components/images/green.png"
 import { useMediaQuery } from 'react-responsive'
 
 
-// console.log(flowerOne)
 
 
 function TypingEffect() {
@@ -58,7 +57,7 @@ function TypingEffect() {
 
 const ImageOne = () => {
   let strength, bgPath;
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   if (isTabletOrMobile) {
     strength=200;
     bgPath = green.src;

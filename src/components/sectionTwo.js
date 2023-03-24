@@ -34,10 +34,10 @@ const ContactLinks = () => {
         </nav>
       );
 }
-// console.log(flowerOne)
+
 const ImageTwo = () => {
   let strength, bgPath;
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   if (isTabletOrMobile) {
     strength=100;
     bgPath = blue.src;
