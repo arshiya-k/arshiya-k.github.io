@@ -13,10 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Arshiya Khattak | Software Engineer</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
       </Head>
       <Navigation />
       <section id="cover">
