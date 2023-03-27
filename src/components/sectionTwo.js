@@ -1,5 +1,5 @@
 import {Parallax} from 'react-parallax';
-import me from '@/components/images/about-me.png';
+// import me from '@/components/images/about-me.png';
 import blue from '@/components/images/blue.png';
 import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
@@ -40,7 +40,7 @@ const ImageTwo = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(min-device-width: 768px)' });
   if (!isTabletOrMobile) {
     strength=800;
-    bgPath = me.src;
+    bgPath = blue.src;
   } else {
     strength=400;
     bgPath = blue.src;
